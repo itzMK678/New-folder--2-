@@ -4,44 +4,61 @@ import { CircleUser } from "lucide-react";
 
 const AboutCards = () => {
   return (
-    <div className="m-15 border border-2 relative w-[300px] h-[380px] rounded-[35px] overflow-hidden p-6   bg-blue-400/20 
-  backdrop-blur-xl 
-  border border-blue-200/40 ">
+    <section className="flex w-full justify-center bg-white px-5 py-8">
 
-     
-    
+      <div
+        className="
+          relative
+          h-[380px]
+          w-[300px]
+          overflow-hidden
+          rounded-[35px]
+          border
+          border-blue-200/50
+          bg-blue-100
+          p-6
+          shadow-lg
+        "
+      >
 
-      {/* Title */}
-      <h2 className="relative z-20 mt-30 text-[22px] font-bold pl-2 leading-tight">
-      Mamoon 
-        <br />
-        Khaliq
-      </h2>
-  <div className="relative mt-3 z-20 bg-white w-fit px-6 py-2 rounded-full text-sm font-medium shadow-sm">
-        Founder
+        {/* Title */}
+        <h2 className="relative z-20 mt-28 pl-2 text-[22px] font-bold leading-tight">
+          Mamoon
+          <br />
+          Khaliq
+        </h2>
+
+        {/* Role */}
+        <div className="relative z-20 mt-3 w-fit rounded-full bg-white px-6 py-2 text-sm font-medium shadow-sm">
+          Founder
+        </div>
+
+        {/* Image */}
+        <img
+          src={Me}
+          alt="Mamoon Khaliq"
+          className="absolute right-[-15px] top-[25px] z-10 h-[300px] w-[230px] object-cover object-top"
+        />
+
+        {/* Bottom */}
+        <div className="absolute bottom-2 left-2 right-2 z-20 flex h-[55px] items-center justify-between rounded-[30px] bg-black px-5">
+
+          <p className="text-2xl font-bold text-white">
+            Connect
+          </p>
+
+          <button
+            type="button"
+            className="flex h-[45px] w-[45px] items-center justify-center rounded-full bg-white text-black transition hover:scale-105"
+          >
+            <CircleUser size={28} />
+          </button>
+
+        </div>
+
       </div>
-      {/* Image */}
-      <img
-        src={Me}
-        alt="Fashion"
-        className="absolute z-10 w-[230px] h-[300px] object-cover object-top right-[-15px] top-[25px]"
-      />
 
-      {/* Bottom price section */}
-      <div className=" mx-3  absolute z-20 bottom-2 left-0 w-full h-[55px] bg-black backdrop-blur-lg rounded-l-[35px] flex items-center justify-between px-7">
-
-        <p className=" text-2xl font-bold text-white shadow-">
-          Connect
-        </p>
-
-        {/* Cart Button */}
-        <button className="w-[45px] h-[45px] bg-black  rounded-full flex items-center justify-center text-white hover:scale-105 transition">
-          <CircleUser  size={28} />
-        </button>
-
-      </div>
-
-    </div>
+    </section>
   );
 };
 

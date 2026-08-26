@@ -32,7 +32,7 @@ const OurProducts = () => {
         <div className="flex flex-col gap-4">
 
           {/* Image 1 */}
-          <div className="group relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
+          <div className="bg-yellow-200 group relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
             <img
               src={Product1}
               alt="Automotive Product"
@@ -43,7 +43,7 @@ const OurProducts = () => {
           </div>
 
           {/* Image 2 */}
-          <div className="group relative h-[110px] overflow-hidden rounded-[25px]">
+          <div className="bg-green-300 group relative h-[110px] overflow-hidden rounded-[25px]">
             <img
               src={Product2}
               alt="Automotive Product"
@@ -56,7 +56,7 @@ const OurProducts = () => {
         </div>
 
         {/* SECOND COLUMN - TALL */}
-        <div className="group relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
+        <div className=" bg-pink-300 group relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
           <img
             src={Product3}
             alt="Automotive Product"
@@ -67,7 +67,7 @@ const OurProducts = () => {
         </div>
 
         {/* CENTER COLUMN */}
-        <div className="group relative h-[250px] overflow-hidden rounded-[28px] md:h-[290px]">
+        <div className="group bg-blue-300 relative h-[250px] overflow-hidden rounded-[28px] md:h-[290px]">
           <img
             src={Product4}
             alt="Automotive Product"
@@ -75,7 +75,7 @@ const OurProducts = () => {
           />
 
           {/* Product Name */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-lg">
+          <div className=" cursor-pointer absolute border-amber-50 bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-lg">
             Explore Products
           </div>
 
@@ -83,7 +83,7 @@ const OurProducts = () => {
         </div>
 
         {/* FOURTH COLUMN - TALL */}
-        <div className="group relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
+        <div className="group bg-pink-300 relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
           <img
             src={Product5}
             alt="Automotive Product"
@@ -97,7 +97,7 @@ const OurProducts = () => {
         <div className="flex flex-col gap-4">
 
           {/* Image 6 */}
-          <div className="group relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
+          <div className="group bg-amber-200 relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
             <img
               src={Product6}
               alt="Automotive Product"
@@ -108,7 +108,7 @@ const OurProducts = () => {
           </div>
 
           {/* Image 7 */}
-          <div className="group relative h-[110px] overflow-hidden rounded-[25px]">
+          <div className="bg-green-300 group relative h-[110px] overflow-hidden rounded-[25px]">
             <img
               src={Product7}
               alt="Automotive Product"

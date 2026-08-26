@@ -1,47 +1,28 @@
-
 import React from "react";
 
-import Toyota from "../assets/Me.png";
-import Honda from "../assets/Me.png";
-import Suzuki from "../assets/Me.png";
-import Nissan from "../assets/Me.png";
-import Hyundai from "../assets/Me.png";
-import Kia from "../assets/Me.png";
+import Toyota from "../assets/Brand1.png";
+import Honda from "../assets/Brand2.png";
+import Suzuki from "../assets/Brand3.png";
+import Nissan from "../assets/Brand4.png";
+import Hyundai from "../assets/Brand5.png";
+import Kia from "../assets/Brand6.png";
 
 const Brands = () => {
   const brands = [
-    {
-      name: "Toyota",
-      logo: Toyota,
-    },
-    {
-      name: "Honda",
-      logo: Honda,
-    },
-    {
-      name: "Suzuki",
-      logo: Suzuki,
-    },
-    {
-      name: "Nissan",
-      logo: Nissan,
-    },
-    {
-      name: "Hyundai",
-      logo: Hyundai,
-    },
-    {
-      name: "Kia",
-      logo: Kia,
-    },
+    { name: "Toyota", logo: Toyota },
+    { name: "Honda", logo: Honda },
+    { name: "Suzuki", logo: Suzuki },
+    { name: "Nissan", logo: Nissan },
+    { name: "Hyundai", logo: Hyundai },
+    { name: "Kia", logo: Kia },
   ];
 
   return (
-    <section className="w-full bg-white px-5 py-12 sm:px-8 md:px-12 lg:px-20">
+    <section className="w-full bg-white py-12">
 
       {/* Heading */}
       <div className="mb-8 text-center">
-        <p className="text-sm font-semibold uppercase tracking-[3px] text-blue-600">
+        <p className="text-sm font-semibold uppercase tracking-[3px] text-pink-300">
           Trusted Partners
         </p>
 
@@ -50,17 +31,19 @@ const Brands = () => {
         </h2>
       </div>
 
-      {/* Brand Strip */}
+      {/* Full Width Black Strip */}
       <div
         className="
-          mx-auto flex max-w-6xl
-          flex-wrap items-center justify-center
-          gap-5 rounded-3xl
-          border border-gray-100
-          bg-gray-50
-          px-5 py-8
-          shadow-sm
-          sm:gap-8
+          flex
+          w-full
+          items-center
+          justify-center
+          gap-4
+          overflow-x-auto
+          bg-black
+          px-5
+          py-8
+          sm:gap-6
           md:justify-between
           md:px-10
         "
@@ -69,32 +52,32 @@ const Brands = () => {
           <div
             key={brand.name}
             className="
-              group flex h-20
-              w-[120px]
-              items-center justify-center
-              rounded-2xl
-              bg-white
-              px-4
-              shadow-sm
-              transition-all duration-300
+              group
+              flex
+              h-20
+              min-w-[120px]
+              items-center
+              justify-center          
+              
+              transition-all
+              duration-300
               hover:-translate-y-1
-              hover:shadow-md
-              sm:w-[140px]
-              md:w-[145px]
+              
+              sm:min-w-[140px]
+              md:min-w-[145px]
             "
           >
             <img
               src={brand.logo}
               alt={`${brand.name} logo`}
               className="
-                max-h-12
+                max-h-20
                 max-w-[100px]
                 object-contain
                 grayscale
-                opacity-60
-                transition-all duration-300
+                transition-all
+                duration-300
                 group-hover:grayscale-0
-                group-hover:opacity-100
               "
             />
           </div>
@@ -106,4 +89,3 @@ const Brands = () => {
 };
 
 export default Brands;
-

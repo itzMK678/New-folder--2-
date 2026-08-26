@@ -1,13 +1,11 @@
-
 import React from "react";
 
 const Mission = () => {
   return (
-    <section className="w-full  px-5 py-16 sm:px-8 md:px-12 lg:px-20">
+    <section className="w-full bg-white px-5 py-16 sm:px-8 md:px-12 lg:px-20">
 
       {/* Heading */}
       <div className="mx-auto mb-12 max-w-3xl text-center">
-
         <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
           Our Mission
         </h2>
@@ -17,26 +15,25 @@ const Mission = () => {
           while delivering reliable service, competitive prices, and a
           trustworthy experience for every customer.
         </p>
-
       </div>
 
       {/* Cards */}
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-6 md:flex-row md:items-stretch">
 
-        {/* Card 1 - Larger */}
+        {/* Quality */}
         <div
           className="
-            h-[280px] w-full
+            h-[280px]
+            w-full
             rounded-3xl
             bg-blue-500
             p-7
             text-white
             shadow-lg
-            transition-all duration-500 ease-in-out
-            hover:scale-100
+            transition duration-300
+            hover:-translate-y-2
             md:h-[340px]
             md:w-[34%]
-            hover:md:w-[34%]
           "
         >
           <h3 className="text-2xl font-bold">
@@ -49,18 +46,18 @@ const Mission = () => {
           </p>
         </div>
 
-        {/* Card 2 - Smaller */}
+        {/* Trust */}
         <div
           className="
-            h-[280px] w-full
+            h-[280px]
+            w-full
             rounded-3xl
             bg-blue-400
             p-7
             text-white
             shadow-lg
-            transition-all duration-500 ease-in-out
-            hover:md:h-[340px]
-            hover:md:w-[34%]
+            transition duration-300
+            hover:-translate-y-2
             md:h-[310px]
             md:w-[31%]
           "
@@ -75,18 +72,18 @@ const Mission = () => {
           </p>
         </div>
 
-        {/* Card 3 - Smaller */}
+        {/* Customer Satisfaction */}
         <div
           className="
-            h-[280px] w-full
+            h-[280px]
+            w-full
             rounded-3xl
             bg-blue-300
             p-7
             text-gray-900
             shadow-lg
-            transition-all duration-500 ease-in-out
-            hover:md:h-[340px]
-            hover:md:w-[34%]
+            transition duration-300
+            hover:-translate-y-2
             md:h-[295px]
             md:w-[31%]
           "
@@ -108,4 +105,3 @@ const Mission = () => {
 };
 
 export default Mission;
-
