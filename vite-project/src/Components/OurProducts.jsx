@@ -1,12 +1,12 @@
 import React from "react";
 
-import Product1 from "../assets/Me.png";
-import Product2 from "../assets/Me.png";
-import Product3 from "../assets/Me.png";
-import Product4 from "../assets/Me.png";
-import Product5 from "../assets/Me.png";
-import Product6 from "../assets/Me.png";
-import Product7 from "../assets/Me.png";
+import Product1 from "../assets/Rightshoes.png";
+import Product2 from "../assets/Rightbag.png";
+import Product3 from "../assets/Rightdress.png";
+import Product4 from "../assets/Suit.png";
+import Product5 from "../assets/Leftdress.png";
+import Product6 from "../assets/Leftbag.png";
+import Product7 from "../assets/Leftshoes.png";
 
 const OurProducts = () => {
   return (
@@ -15,13 +15,11 @@ const OurProducts = () => {
       {/* Heading */}
       <div className="mx-auto mb-12 max-w-4xl text-center">
         <h2 className="text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl md:text-6xl">
-          Our Products
+          Our  <span className="text-pink-400">Most</span> Demanding Products
         </h2>
 
         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
-          Discover our collection of quality automotive parts and kits,
-          designed to provide reliability, performance, and value for your
-          vehicle.
+          Discover our finest Collection and find what suits you better
         </p>
       </div>
 
@@ -47,7 +45,7 @@ const OurProducts = () => {
             <img
               src={Product2}
               alt="Automotive Product"
-              className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              className="h-full w-full object-contain transition duration-500 group-hover:scale-110"
             />
 
             <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/20" />
@@ -67,7 +65,7 @@ const OurProducts = () => {
         </div>
 
         {/* CENTER COLUMN */}
-        <div className="group bg-blue-300 relative h-[250px] overflow-hidden rounded-[28px] md:h-[290px]">
+        <div className="group bg-gray-300 relative h-[250px] overflow-hidden rounded-[28px] md:h-[290px]">
           <img
             src={Product4}
             alt="Automotive Product"
@@ -83,7 +81,7 @@ const OurProducts = () => {
         </div>
 
         {/* FOURTH COLUMN - TALL */}
-        <div className="group bg-pink-300 relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
+        <div className="group bg-pink-200 relative h-[300px] overflow-hidden rounded-[28px] md:h-[390px]">
           <img
             src={Product5}
             alt="Automotive Product"
@@ -97,7 +95,7 @@ const OurProducts = () => {
         <div className="flex flex-col gap-4">
 
           {/* Image 6 */}
-          <div className="group bg-amber-200 relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
+          <div className="group bg-amber-300 relative h-[190px] overflow-hidden rounded-[25px] md:h-[210px]">
             <img
               src={Product6}
               alt="Automotive Product"
@@ -108,7 +106,7 @@ const OurProducts = () => {
           </div>
 
           {/* Image 7 */}
-          <div className="bg-green-300 group relative h-[110px] overflow-hidden rounded-[25px]">
+          <div className="bg-blue-400 group relative h-[110px] overflow-hidden rounded-[25px]">
             <img
               src={Product7}
               alt="Automotive Product"

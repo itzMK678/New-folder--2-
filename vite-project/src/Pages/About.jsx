@@ -7,7 +7,7 @@ import OurProducts from "../Components/OurProducts";
 import Story from "../Components/Story";
 import Brands from "../Components/Brands";
 import WhoWeAre from "../Components/WhoWeAre";
-
+import Team from "../Components/Team"
 const About = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -40,6 +40,8 @@ const About = () => {
 <div><WhoWeAre/></div>
 <div><Brands/></div>
 <div><Story/></div>
+<div><Team/></div>
+<div><OurProducts/></div>
     </div>
   );
 };
