@@ -1,182 +1,213 @@
 import React from "react";
+import Logo from "../assets/logo.png";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative bg-[#f45bb0] text-white py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h1 className="text-5xl font-extrabold mb-5">
-            Get In <span className="text-white">Touch</span>
+      <section className="relative min-h-[250px] bg-pink-400 px-4 pb-20 pt-8 text-center text-white">
+        <div className="mx-auto max-w-5xl">
+
+          <h1 className="text-4xl font-extrabold sm:text-5xl">
+            Contact Us
           </h1>
 
-          <p className="mx-auto max-w-3xl text-lg leading-8">
-            Have a question, need help, or want to know more about our
-            products? We would love to hear from you.
+          <p className="mx-auto mt-5 max-w-4xl text-base leading-7 sm:text-lg">
+            Have a question or need help? We are always here to listen.
+            Get in touch with <span className="font-bold">MY Fashion</span>
+            and we will be happy to assist you.
           </p>
+
+        </div>
+
+        {/* Logo */}
+        <div className="absolute bottom-[-45px] left-1/2 flex h-[90px] w-[90px] -translate-x-1/2 items-center justify-center overflow-hidden rounded-full border-4 border-white bg-white shadow-lg">
+
+          <img
+            src={Logo}
+            alt="MY Fashion Logo"
+            className="h-full w-full object-contain"
+          />
+
         </div>
       </section>
 
 
-      {/* Contact Information + Form */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      {/* Contact Section */}
+      <section className="w-full px-6 py-20 md:px-12 lg:px-20">
 
-        <div className="grid gap-12 md:grid-cols-2">
+        <div className="mx-auto flex max-w-7xl flex-col gap-12 md:flex-row">
 
-          {/* Contact Information */}
-          <div>
-            <p className="mb-3 text-sm font-semibold tracking-[0.3em] text-[#f45bb0]">
-              CONTACT US
+
+          {/* LEFT SIDE */}
+          <div className="w-full md:w-1/2">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-gray-500">
+              Get In Touch
             </p>
 
-            <h2 className="mb-6 text-4xl font-extrabold text-[#111827]">
-              We'd Love To <span className="text-[#f45bb0]">Hear From You.</span>
+            <h2 className="mb-6 text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl">
+              We'd Love To
+              <span className="block text-pink-400">
+                Hear From You.
+              </span>
             </h2>
 
             <p className="mb-8 text-lg leading-8 text-gray-600">
               Whether you have a question about our products, need help with
-              your order, or simply want to say hello, our team is here to
-              help.
+              your order, or simply want to know more about MY Fashion,
+              feel free to contact us.
             </p>
 
 
             {/* Address */}
-            <div className="mb-5 flex items-start gap-4 rounded-2xl border border-pink-100 bg-white p-5 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f45bb0] text-xl">
+            <div className="mb-5 flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5">
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
                 📍
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-[#111827]">
+                <h3 className="text-xl font-bold text-gray-900">
                   Visit Us
                 </h3>
 
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1 leading-7 text-gray-500">
                   Bakhsh Arcade, Civil Hospital Road,
                   Bahawalpur, Pakistan
                 </p>
               </div>
+
             </div>
 
 
             {/* Phone */}
-            <div className="mb-5 flex items-start gap-4 rounded-2xl border border-pink-100 bg-white p-5 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f45bb0] text-xl">
+            <div className="mb-5 flex items-start gap-4 rounded-[12px] bg-pink-400 p-5">
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-xl">
                 📞
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-[#111827]">
+                <h3 className="text-xl font-bold text-white">
                   Call Us
                 </h3>
 
-                <p className="mt-1 text-gray-600">
-                  +92 3322445523
+                <p className="mt-1 leading-7 text-pink-100">
+                  +92 00112233456
                 </p>
               </div>
+
             </div>
 
 
             {/* Email */}
-            <div className="flex items-start gap-4 rounded-2xl border border-pink-100 bg-white p-5 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f45bb0] text-xl">
+            <div className="flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5">
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
                 ✉️
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-[#111827]">
+                <h3 className="text-xl font-bold text-gray-900">
                   Email Us
                 </h3>
 
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1 leading-7 text-gray-500">
                   info@myfashion.com
                 </p>
               </div>
+
             </div>
 
           </div>
 
 
-          {/* Contact Form */}
-          <div className="rounded-3xl bg-gray-50 p-8 shadow-lg">
+          {/* RIGHT SIDE - FORM */}
+          <div className="w-full md:w-1/2">
 
-            <h2 className="mb-2 text-3xl font-extrabold text-[#111827]">
-              Send Us A <span className="text-[#f45bb0]">Message</span>
-            </h2>
+            <div className="rounded-[12px] bg-gray-50 p-6 md:p-8">
 
-            <p className="mb-7 text-gray-600">
-              Fill out the form below and we'll get back to you soon.
-            </p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-gray-500">
+                Send A Message
+              </p>
 
-
-            <form className="space-y-5">
-
-              {/* Name */}
-              <div>
-                <label className="mb-2 block font-semibold text-[#111827]">
-                  Your Name
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#f45bb0] focus:ring-2 focus:ring-pink-100"
-                />
-              </div>
+              <h2 className="mb-8 text-3xl font-extrabold text-gray-900 md:text-4xl">
+                Let's Talk
+                <span className="text-pink-400">.</span>
+              </h2>
 
 
-              {/* Email */}
-              <div>
-                <label className="mb-2 block font-semibold text-[#111827]">
-                  Email Address
-                </label>
+              <form className="space-y-5">
 
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#f45bb0] focus:ring-2 focus:ring-pink-100"
-                />
-              </div>
+                {/* Name */}
+                <div>
+                  <label className="mb-2 block font-semibold text-gray-900">
+                    Your Name
+                  </label>
 
-
-              {/* Subject */}
-              <div>
-                <label className="mb-2 block font-semibold text-[#111827]">
-                  Subject
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="What is this about?"
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#f45bb0] focus:ring-2 focus:ring-pink-100"
-                />
-              </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full rounded-[12px] border-2 border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-pink-400"
+                  />
+                </div>
 
 
-              {/* Message */}
-              <div>
-                <label className="mb-2 block font-semibold text-[#111827]">
-                  Message
-                </label>
+                {/* Email */}
+                <div>
+                  <label className="mb-2 block font-semibold text-gray-900">
+                    Email Address
+                  </label>
 
-                <textarea
-                  rows="5"
-                  placeholder="Write your message..."
-                  className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#f45bb0] focus:ring-2 focus:ring-pink-100"
-                ></textarea>
-              </div>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full rounded-[12px] border-2 border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-pink-400"
+                  />
+                </div>
 
 
-              {/* Button */}
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-[#f45bb0] px-6 py-3 font-bold text-white transition hover:bg-pink-600"
-              >
-                Send Message
-              </button>
+                {/* Subject */}
+                <div>
+                  <label className="mb-2 block font-semibold text-gray-900">
+                    Subject
+                  </label>
 
-            </form>
+                  <input
+                    type="text"
+                    placeholder="Enter subject"
+                    className="w-full rounded-[12px] border-2 border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-pink-400"
+                  />
+                </div>
+
+
+                {/* Message */}
+                <div>
+                  <label className="mb-2 block font-semibold text-gray-900">
+                    Message
+                  </label>
+
+                  <textarea
+                    rows="5"
+                    placeholder="Write your message..."
+                    className="w-full resize-none rounded-[12px] border-2 border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-pink-400"
+                  ></textarea>
+                </div>
+
+
+                {/* Button */}
+                <button
+                  type="submit"
+                  className="w-full rounded-[12px] bg-pink-400 px-6 py-3 font-bold text-white transition hover:bg-pink-500"
+                >
+                  Send Message
+                </button>
+
+              </form>
+
+            </div>
 
           </div>
 
@@ -186,23 +217,24 @@ const Contact = () => {
 
 
       {/* Bottom Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-5xl px-6 text-center">
+      <section className="w-full bg-white px-6 pb-20 md:px-12 lg:px-20">
 
-          <p className="mb-3 text-sm font-semibold tracking-[0.3em] text-[#f45bb0]">
-            MY FASHION
-          </p>
+        <div className="mx-auto max-w-7xl rounded-[12px] bg-pink-400 px-6 py-12 text-center">
 
-          <h2 className="text-4xl font-extrabold text-[#111827]">
-            Your Style, <span className="text-[#f45bb0]">Our Passion.</span>
+          <h2 className="text-3xl font-extrabold text-white md:text-4xl">
+            Your Style,
+            <span className="block">
+              Our Passion.
+            </span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-gray-600">
-            Thank you for choosing MY Fashion. We are always happy to connect
-            with our customers and help you find something you love.
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-pink-100">
+            Thank you for choosing MY Fashion. We are always happy to
+            connect with our customers and help you find something you love.
           </p>
 
         </div>
+
       </section>
 
     </div>
