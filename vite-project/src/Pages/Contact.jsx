@@ -15,8 +15,9 @@ const Contact = () => {
 
           <p className="mx-auto mt-5 max-w-4xl text-base leading-7 sm:text-lg">
             Have a question or need help? We are always here to listen.
-            Get in touch with <span className="font-bold">MY Fashion</span>
-            and we will be happy to assist you.
+            Get in touch with{" "}
+            <span className="font-bold">MY Fashion</span> and we will be
+            happy to assist you.
           </p>
 
         </div>
@@ -39,7 +40,6 @@ const Contact = () => {
 
         <div className="mx-auto flex max-w-7xl flex-col gap-12 md:flex-row">
 
-
           {/* LEFT SIDE */}
           <div className="w-full md:w-1/2">
 
@@ -61,8 +61,13 @@ const Contact = () => {
             </p>
 
 
-            {/* Address */}
-            <div className="mb-5 flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5">
+            {/* LOCATION CARD */}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Bakhsh+Arcade+Civil+Hospital+Road+Bahawalpur"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-5 flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
                 📍
@@ -77,13 +82,20 @@ const Contact = () => {
                   Bakhsh Arcade, Civil Hospital Road,
                   Bahawalpur, Pakistan
                 </p>
+
+                <p className="mt-2 text-sm font-semibold text-pink-400">
+                  Click to open Google Maps →
+                </p>
               </div>
 
-            </div>
+            </a>
 
 
-            {/* Phone */}
-            <div className="mb-5 flex items-start gap-4 rounded-[12px] bg-pink-400 p-5">
+            {/* PHONE CARD */}
+            <a
+              href="tel:+92XXXXXXXXXX"
+              className="mb-5 flex items-start gap-4 rounded-[12px] bg-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-lg"
+            >
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-xl">
                 📞
@@ -95,15 +107,22 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-1 leading-7 text-pink-100">
-                  +92 00112233456
+                  +92 XXX XXXXXXX
+                </p>
+
+                <p className="mt-2 text-sm font-semibold text-white">
+                  Click to call →
                 </p>
               </div>
 
-            </div>
+            </a>
 
 
-            {/* Email */}
-            <div className="flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5">
+            {/* EMAIL CARD */}
+            <a
+              href="mailto:info@myfashion.com"
+              className="flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
                 ✉️
@@ -117,14 +136,18 @@ const Contact = () => {
                 <p className="mt-1 leading-7 text-gray-500">
                   info@myfashion.com
                 </p>
+
+                <p className="mt-2 text-sm font-semibold text-pink-400">
+                  Click to send an email →
+                </p>
               </div>
 
-            </div>
+            </a>
 
           </div>
 
 
-          {/* RIGHT SIDE - FORM */}
+          {/* RIGHT SIDE - CONTACT FORM */}
           <div className="w-full md:w-1/2">
 
             <div className="rounded-[12px] bg-gray-50 p-6 md:p-8">
@@ -141,7 +164,7 @@ const Contact = () => {
 
               <form className="space-y-5">
 
-                {/* Name */}
+                {/* NAME */}
                 <div>
                   <label className="mb-2 block font-semibold text-gray-900">
                     Your Name
@@ -155,7 +178,7 @@ const Contact = () => {
                 </div>
 
 
-                {/* Email */}
+                {/* EMAIL */}
                 <div>
                   <label className="mb-2 block font-semibold text-gray-900">
                     Email Address
@@ -169,7 +192,7 @@ const Contact = () => {
                 </div>
 
 
-                {/* Subject */}
+                {/* SUBJECT */}
                 <div>
                   <label className="mb-2 block font-semibold text-gray-900">
                     Subject
@@ -183,7 +206,7 @@ const Contact = () => {
                 </div>
 
 
-                {/* Message */}
+                {/* MESSAGE */}
                 <div>
                   <label className="mb-2 block font-semibold text-gray-900">
                     Message
@@ -197,7 +220,7 @@ const Contact = () => {
                 </div>
 
 
-                {/* Button */}
+                {/* BUTTON */}
                 <button
                   type="submit"
                   className="w-full rounded-[12px] bg-pink-400 px-6 py-3 font-bold text-white transition hover:bg-pink-500"
@@ -216,7 +239,7 @@ const Contact = () => {
       </section>
 
 
-      {/* Bottom Section */}
+      {/* BOTTOM SECTION */}
       <section className="w-full bg-white px-6 pb-20 md:px-12 lg:px-20">
 
         <div className="mx-auto max-w-7xl rounded-[12px] bg-pink-400 px-6 py-12 text-center">
