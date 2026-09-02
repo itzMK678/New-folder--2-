@@ -17,7 +17,7 @@ const Team = () => {
       Name: "Miss Jannat",
       role: "Founder",
       src: Me2,
-      Linkedin: "hhttps://www.linkedin.com/in/jannat-zaman-90441a340/",
+      Linkedin: "https://www.linkedin.com/in/jannat-zaman-90441a340",
       borderColor: "border-pink-200/50",
       bgColor: "bg-pink-100",
     },

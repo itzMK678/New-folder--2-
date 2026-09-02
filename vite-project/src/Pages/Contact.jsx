@@ -124,7 +124,7 @@ const Contact = () => {
               className="flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
 
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
+              <div className=" flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-400 text-xl">
                 ✉️
               </div>
 
@@ -150,7 +150,7 @@ const Contact = () => {
           {/* RIGHT SIDE - CONTACT FORM */}
           <div className="w-full md:w-1/2">
 
-            <div className="rounded-[12px] bg-gray-50 p-6 md:p-8">
+            <div className=" rounded-[12px] bg-gray-50 p-6 md:p-8">
 
               <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-gray-500">
                 Send A Message
@@ -165,7 +165,7 @@ const Contact = () => {
               <form className="space-y-5">
 
                 {/* NAME */}
-                <div>
+                <div >
                   <label className="mb-2 block font-semibold text-gray-900">
                     Your Name
                   </label>
