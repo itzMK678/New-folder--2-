@@ -10,54 +10,7 @@ const Lastbanner = () => {
     <>
    
       {/* HERO */}
-      <section
-        id="hero"
-        className="
-          w-full
-          h-[90vh]
-          bg-cover
-          px-20
-          flex
-          flex-col
-          items-start
-          justify-center
-          bg-[position:top_25%_right_0]
-        "
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <h4 className="pb-[15px] text-xl text-[#222]">
-          Trade-in-offer
-        </h4>
-
-        <h2 className="text-[46px] leading-[54px] text-[#222]">
-          Super value deal
-        </h2>
-
-        <h1 className="text-[50px] leading-[64px] text-[#088178]">
-          On all products
-        </h1>
-
-        <p className="text-base text-[#465b52] my-[15px] mb-5">
-          Save more with coupons & up to 70% off!
-        </p>
-
-        <button
-          className="
-            bg-transparent
-            text-[#088178]
-            border-0
-            py-[14px]
-            pr-[80px]
-            pl-[65px]
-            bg-no-repeat
-            cursor-pointer
-            font-bold
-          "
-          style={{ backgroundImage: `url(${button})` }}
-        >
-          Shop now
-        </button>
-      </section>
+  
 
 
       {/* SMALL BANNERS */}
@@ -79,7 +32,7 @@ const Lastbanner = () => {
             justify-center
             items-center
             text-center
-            min-w-[520px]
+            w-full
             h-[50vh]
             bg-cover
             bg-no-repeat
@@ -131,7 +84,7 @@ const Lastbanner = () => {
             justify-center
             items-center
             text-center
-            min-w-[520px]
+            w-full
             h-[50vh]
             bg-cover
             bg-no-repeat

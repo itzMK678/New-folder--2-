@@ -41,7 +41,7 @@ const Team = () => {
          Meet the 3 legends behind all this 
         </p>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center items-center flex-wrap gap-6">
         {people.map((person, index) => (
           <AboutCards key={index} data={person} />
         ))}

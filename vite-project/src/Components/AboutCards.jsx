@@ -4,7 +4,7 @@ import { CircleUser } from "lucide-react";
 
 const AboutCards = ({data}) => {
   return (
-    <section className="flex w-full justify-center bg-white px-5 py-8">
+    <section className="flex  justify-center bg-white px-5 py-8">
 
       <div
         className={`
