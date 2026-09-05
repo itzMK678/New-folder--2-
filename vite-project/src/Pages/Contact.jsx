@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.png";
 
 const Contact = () => {
   return (
@@ -62,7 +62,7 @@ const Contact = () => {
 
 
             {/* LOCATION CARD */}
-            <a
+            
               href="https://www.google.com/maps/search/?api=1&query=Bakhsh+Arcade+Civil+Hospital+Road+Bahawalpur"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +92,7 @@ const Contact = () => {
 
 
             {/* PHONE CARD */}
-            <a
+            
               href="tel:+92XXXXXXXXXX"
               className="mb-5 flex items-start gap-4 rounded-[12px] bg-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-lg"
             >
@@ -119,7 +119,7 @@ const Contact = () => {
 
 
             {/* EMAIL CARD */}
-            <a
+            
               href="mailto:info@myfashion.com"
               className="flex items-start gap-4 rounded-[12px] border-2 border-pink-400 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
@@ -251,17 +251,4 @@ const Contact = () => {
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl leading-7 text-pink-100">
-            Thank you for choosing MY Fashion. We are always happy to
-            connect with our customers and help you find something you love.
-          </p>
-
-        </div>
-
-      </section>
-
-    </div>
-  );
-};
-
-export default Contact;
+          <p className="mx-auto mt-4 max-w-2xl
