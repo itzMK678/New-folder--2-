@@ -1,5 +1,5 @@
 import React from "react";
-import StartedImage from "../assets/3pson.png";
+import StartedImage from "../assets/3Pson.png";
 
 const Story = () => {
   return (
