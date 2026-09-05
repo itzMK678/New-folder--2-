@@ -251,4 +251,17 @@ const Contact = () => {
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-pink-100">
+            Thank you for choosing MY Fashion. We are always happy to
+            connect with our customers and help you find something you love.
+          </p>
+
+        </div>
+
+      </section>
+
+    </div>
+  );
+};
+
+export default Contact;
